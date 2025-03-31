@@ -95,3 +95,6 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/products', [UserProductController::class, 'index'])->name('xxx');
 Route::get('/cart', [CartController::class, 'index'])->name('xxx');
+
+
+///choa thao
