@@ -1,0 +1,129 @@
+.cart {
+    padding: 20px;
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .content {
+            .cart__card {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .left {
+                    .item{
+                    display: flex;
+                    gap: 20px;
+
+                    .product-image-cart {
+                        padding: 10px;
+
+                        img {
+                            max-width: 120px;
+                            height: 150px;
+                        }
+                    }
+
+                    .product-txt {
+                        h3 {
+                            font-size: 22px;
+                            font-weight: bold;
+                            line-height: 1.2;
+                            margin-bottom: 8px;
+                        }
+
+                        .cart__options {
+                            color: #666;
+                            font-size: 14px;
+                        }
+
+                        .cart__sku {
+                            font-size: 14px;
+                            color: #666;
+                            margin: 8px 0;
+                        }
+
+                        .cart__stock {
+                            color: #666;
+                            font-size: 14px;
+                        }
+                    }
+                    .cart-details{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        padding-top: 26px;
+                            .cart-price {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+    
+                                .current-price {
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color:black;
+                                }
+    
+                                .original-price {
+                                    font-size: 18px;
+                                    color:black;
+                                    text-decoration: line-through;
+                                }
+                            }
+                            
+                            .delete {
+                                cursor: pointer;
+                                margin-top: 20px;
+    
+                                svg {
+                                    transition: all 0.2s;
+                                    
+                                    &:hover {
+                                        fill: #d70018;
+                                    }
+                                }
+                            } 
+                    }
+                    .number-input{
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #ddd;
+                        border-radius: 25px;
+                        padding: 5px;
+                        width: 100px;
+                        justify-content: space-between;
+                        button {
+                            background-color: white;
+                            border: none;
+                            color: #ccc;
+                            font-size: 18px;
+                            width: 30px;
+                            height: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                          }
+                          
+                          button:focus {
+                            outline: none;
+                          }
+                          
+                          button:hover {
+                            color: black;
+                          }
+                          
+                          .number {
+                            font-size: 18px;
+                            font-weight: bold;
+                          }
+                    }
+                }
+            }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,332 @@
+.product {
+    .container {
+        .content {
+            .carousel-slider {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                overflow: hidden;
+                .slick-list {
+                    padding: 0 10px; 
+                }
+                .slick-slide {
+                    height: auto;
+                }
+                .slick-track {
+                    display: flex;
+                    gap: 20px;
+                }
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 1px solid #ddd;
+                    border-radius: 20px;
+                    background-color: #F5F5F5;
+                    transition: transform 0.3s ease;
+                    margin: 10px; 
+                    justify-content: space-between; 
+                    padding: 20px; 
+                    
+
+                    .product-image-wrap {
+                        padding: 10px;
+                         .badge-icon {
+                            position: absolute;
+                            top: 20px; 
+                            left: 330px; 
+                            background-color: #2189ff;
+                            color: white; 
+                            padding: 5px 10px;
+                            font-size: 12px;
+                            font-weight: 700;
+                            border-radius: 20px;
+                            z-index: 10;
+                        }
+                        img {
+                            width: 100%;
+                            max-width: 280px;
+                            border-radius: 8px;
+                            display: none;
+
+                            &.active {
+                                display: block !important;
+                            }
+                        }
+                    }
+
+                    .product-info {
+                        .product-name {
+                            font-size: 16px;
+                            overflow: hidden;
+                            font-family: 'SamsungSharpSans', arial, sans-serif;
+                            line-height: 1.33;
+                            font-weight: bold;
+                            text-align: center;
+                            color: #000;
+                            display: none;
+                            margin: 0;
+                            &.active {
+                                display: block;
+                            }
+                        }
+                    }
+                    .my-recommended-product__card--color{
+                        .option-selector__color-name{
+                            font-weight: bold;
+                            line-height: 1.33;
+                            font-size: .83333333vw;;
+                            .color-name-text{
+                                font-weight: 300;
+                            }
+                        }
+
+                    }
+                    .product-options1 {
+                        display: flex;
+                        justify-content: center;
+                        padding:10px;
+
+                        input[type="radio"] {
+                            display: none;
+                        }
+
+                        .option-label {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding:6px;
+                            border-radius: 25px;
+                            cursor: pointer;
+                            transition: 0.3s;
+                            font-size: 14px;
+                            font-weight: bold;
+                            min-width: 80px;
+                            text-align: center;
+                            color: black;
+                            border: 2px solid transparent;
+                        }
+
+                        input[type="radio"]:checked + .option-label {
+                            border: 2px dashed black;
+                        }
+                    }
+                    .product-options2 {
+                        display: flex;
+                        justify-content: center;
+                        padding:10px;
+
+                        input[type="radio"] {
+                            display: none;
+                        }
+
+                        .option-label {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding:6px;
+                            border-radius: 25px;
+                            cursor: pointer;
+                            transition: 0.3s;
+                            font-size: 14px;
+                            font-weight: bold;
+                            min-width: 80px;
+                            text-align: center;
+                            color: black;
+                            border: 2px solid transparent;
+                        }
+
+                        input[type="radio"]:checked + .option-label {
+                            border: 2px dashed black;
+                        }
+                    }
+                    .product-options {
+                        display: flex;
+                        justify-content: center;
+                        padding:10px;
+
+                        input[type="radio"] {
+                            display: none;
+                        }
+
+                        .option-label {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding:6px;
+                            border-radius: 25px;
+                            cursor: pointer;
+                            transition: 0.3s;
+                            font-size: 14px;
+                            font-weight: bold;
+                            min-width: 80px;
+                            text-align: center;
+                            color: black;
+                            border: 2px solid transparent;
+                        }
+
+                        input[type="radio"]:checked + .option-label {
+                            border: 2px dashed black;
+                        }
+                    }
+                    .color-options {
+                        display: flex;
+                        gap: 10px; 
+                        padding: 5px 0;
+                    
+                        input {
+                            display: none; 
+                        }
+                    
+                        .color-label {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            cursor: pointer;
+                            border: 1px solid;
+                    
+                            &.gray {
+                                background-color: #4a4a4a;
+                            }
+                    
+                            &.silver {
+                                background-color: #c0c0c0;
+                            }
+                            &.white {
+                                background-color:white;
+                            }
+                            &.jadegreen{
+                                background-color:#afeeee;
+                            }
+                            &.black{
+                                background-color:#0a0a0a;
+                            }
+                            &.iceblue{
+                                background-color:#E0FFFF;
+                            }
+                            &.silver-buds{
+                                background-color: #c0c0c0;
+                            }
+                        }
+                    
+                        input:checked + .color-label {
+                            border: 2px dashed black;
+                        }
+                    }
+                    
+
+                    .product-price {
+                        text-align: center;
+                        font-family: 'SamsungSharpSans', arial, sans-serif;
+                    
+                        .product-price-save {
+                            font-size: 12px;
+                            color: #1a73e8; 
+                            display: none;
+                            line-height: 1.2; 
+                            &.active {
+                                display: block;
+                            }
+                    
+                            span {
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: #1a73e8;
+                            }
+                    
+                            del {
+                                font-size: 12px;
+                                color:#000;
+                                text-decoration: line-through;
+                                opacity: 0.8;
+                                display: inline-block; 
+                            }
+                        }
+                        .product-price1 {
+                            margin-top: 5px;
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 1.33;
+                            font-weight: bold;
+                    
+                            .product-price {
+                                font-size: 18px;
+                                line-height: 1.33;
+                                font-weight: bold;
+                                
+                    
+                                &.active {
+                                    display: block;
+                                }
+                              
+                                
+                            }
+                        }
+                    }
+                    .my-recommended-product__card-cta {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 10px;
+                       .card-cta {
+                            display: inline-block;
+                            background: black;
+                            color: white;
+                            font-size: 14px; 
+                            font-weight: bold;
+                            text-align: center;
+                            padding: 8px 70px;
+                            border-radius: 40px;
+                            text-decoration: none;
+                            transition: all 0.3s ease-in-out;
+                    
+                            &:hover {
+                                background-color: white;
+                                color: black;
+                                border: 1px solid black;
+                            }
+                        }
+                    }
+                    
+                    
+                    
+                    
+                }
+            }
+            .slick-prev, .slick-next {
+                width: 40px;
+                height: 40px;
+                background: #333;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+
+                &:before {
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+
+            .slick-dots {
+                bottom: -30px;
+
+                li {
+                    button {
+                        &:before {
+                            font-size: 12px;
+                            color: #333;
+                        }
+                    }
+
+                    &.slick-active button:before {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

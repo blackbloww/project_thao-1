@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@mixin mq($breakpoint: 768px, $rule: max, $subtraction: false) {
+    @if $rule ==max and $subtraction {
+        $breakpoint: $breakpoint - 0.0625;
+    }
+
+    @media screen and (#{$rule}-width: $breakpoint) {
+        @content;
+    }
+}
+
+html {
+    font-size: min(10px, 2.42vw);
+    // scroll-behavior: smooth;
+}
+
+// :target  {
+//     scroll-margin-top: 50vh; 
+// }
+
+body {
+    // font-family: "Noto Sans JP", sans-serif;
+    // font-size: 1.6rem;
+    // line-height: 1.5;
+    // // letter-spacing: 0.075em;
+    // padding-top: 13rem;
+    // // overflow-x: hidden;
+    // // background: #f4f5f7;
+    // font-weight: 400;
+}
+
+img,
+embed,
+object,
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    // max-width: 1440px;
+    margin: 0 auto;
+    width: 96%;
+}
+
+a {
+    transition: all 0.3s;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+

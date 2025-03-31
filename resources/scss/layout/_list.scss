@@ -1,0 +1,189 @@
+// .sec_two {
+//     padding: 10px;
+
+//     .container {
+//         width: 100%;
+//         margin: 0 auto;
+//         text-align: center;
+
+//         .content {
+//             .text_block {
+//                 h2 {
+//                     font-size: 30px;
+//                     color: #000;
+//                     font-weight: 700;
+//                     line-height: 1.47;
+//                 }
+//             }
+
+//             .content-list__common {
+//                 .list {
+//                     display: flex;
+//                     justify-content: center;
+//                     list-style: none;
+//                     gap: 30px;
+//                     font-family: 'SamsungOne', arial, sans-serif;
+
+//                     .item {
+//                         margin: 0 15px;
+
+//                         .tab__item-title {
+//                             background: none;
+//                             border: none;
+//                             cursor: pointer;
+//                             text-decoration: none;
+//                             font-size: 18px;
+//                             font-weight: bold;
+//                             color: #000;
+//                             position: relative;
+//                             padding-bottom: 5px;
+//                             transition: all 0.3s ease;
+//                             outline: none;
+
+//                             // Đường gạch chân
+//                             .tab__item-line {
+//                                 content: "";
+//                                 position: absolute;
+//                                 bottom: 0;
+//                                 top: 21px;
+//                                 left: 50%; 
+//                                 height: 2px;
+//                                 background-color: #000;
+//                                 width: 0; 
+//                                 transition: width 0.3s ease, left 0.3s ease;
+//                             }
+
+//                             &:hover {
+//                                 opacity: 0.7; 
+//                             }
+
+//                             &:focus {
+//                                 outline: dotted 2px black; 
+//                                 .tab__item-line {
+//                                     left: 0;
+//                                     width: 100%; 
+//                                 }
+//                             }
+
+//                             &:active {
+//                                 outline: dotted 2px black; 
+//                                 .tab__item-line {
+//                                     left: 0;
+//                                     width: 100%; 
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .product-section {
+//     padding: 10px;
+
+//     .container {
+//         .content {
+//             max-width: 1400px;
+//             margin: 0 auto;
+//             width: 100%;
+//             display: flex;
+//             height: 100%;
+//         }
+
+//         .product {
+//             display: flex;
+//             width: 100%;
+//             height: 100%;
+//             gap: 20px;
+//         }
+
+//         /* Cột trái */
+//         .left-column {
+//             width: 50%;
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             padding: 10px;
+//             position: relative;
+//         }
+
+//         .left-column .image {
+//             position: relative;
+//             width: 100%;
+//         }
+
+//         .left-column .image img {
+//             width: 100%;
+//             height: auto;
+//             object-fit: cover;
+//             border: 1px solid #ddd;
+//             border-radius: 15px;
+//         }
+
+//         .left-column .text-image {
+//             position: absolute;
+//             bottom: 10px;
+//             left: 50%;
+//             transform: translateX(-50%);
+//             background: rgba(0, 0, 0, 0.6); /* Nền mờ giúp dễ đọc */
+//             color: #fff;
+//             padding: 10px 15px;
+//             border-radius: 10px;
+//             text-align: center;
+//             font-size: 16px;
+//             font-weight: 500;
+//         }
+
+//         /* Cột phải */
+//         .right-column {
+//             width: 50%;
+//             height: 100%;
+//             display: flex;
+//             flex-wrap: wrap;
+//         }
+
+//         .right-column-item {
+//             width: 50%;
+//             height: 50%;
+//             padding: 10px;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             text-align: center;
+//             position: relative;
+//             box-sizing: border-box;
+//         }
+
+//         .right-column-item .image {
+//             position: relative;
+//             width: 100%;
+//         }
+
+//         .right-column-item .image img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//             border: 1px solid #ddd;
+//             border-radius: 15px;
+//         }
+
+//         .right-column-item .text-image {
+//             position: absolute;
+//             bottom: 10px;
+//             left: 50%;
+//             transform: translateX(-50%);
+//             background: rgba(0, 0, 0, 0.6);
+//             color: #fff;
+//             padding: 8px 12px;
+//             border-radius: 8px;
+//             text-align: center;
+//             font-size: 14px;
+//             font-weight: 500;
+//             width: 90%;
+//         }
+//     }
+// }
